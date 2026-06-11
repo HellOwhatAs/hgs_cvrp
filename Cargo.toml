@@ -1,0 +1,18 @@
+[package]
+name = "hgs-cvrp"
+version = "1.0.0"
+edition = "2021"
+description = "Rust implementation of the Hybrid Genetic Search for the CVRP (HGS-CVRP)"
+license = "MIT"
+
+[lib]
+name = "hgs_cvrp"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hgs"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+codegen-units = 1
